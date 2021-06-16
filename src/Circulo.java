@@ -5,7 +5,7 @@ public class Circulo {
 
 //--- Constructor Círculo
     public Circulo (String nombre){ //Constructor por defecto
-        System.out.println(nombre);
+        System.out.println(nombre+"\n");
     }
 
     public Circulo (String nombre, float radio){

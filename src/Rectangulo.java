@@ -6,7 +6,7 @@ public class Rectangulo {
 
 //--- Constructor Rectángulo
     public Rectangulo (String nombre){ //Constructor por defecto
-        System.out.println(nombre);
+        System.out.println(nombre+"\n");
     }
 
     public Rectangulo (String nombre, int ancho, int largo){ //Constructor con parámetros

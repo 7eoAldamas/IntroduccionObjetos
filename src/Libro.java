@@ -6,7 +6,7 @@ public class Libro {
 
 //--- Constructor Libro
     public Libro (String nombre){ //Constructor por defecto
-        System.out.println(nombre);
+        System.out.println(nombre+"\n");
     }
 
     public Libro (String nombre, String libro){ //Constructor con parámetros

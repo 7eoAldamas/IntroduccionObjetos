@@ -5,7 +5,7 @@ public class Cuadrado {
 
     //--- Constructor Cuadrado
     public Cuadrado(String nombre) { //Constructor por defecto
-        System.out.println(nombre);
+        System.out.println(nombre+"\n");
     }
 
     public Cuadrado(String nombre, int lado) { //Constructor con parámetro
