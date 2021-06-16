@@ -34,7 +34,7 @@ public class Cuadrado {
     }
 
     //--- Método para mostrar resultados
-    public void mostrarResultados(){
+    public void resultadoCuadrado(){
         System.out.println("*-*\tEl area del cuadrado es: "+areaCuadrado(getLado()));
         System.out.println("*-*\tEl perimetro del cuadrado es: "+perimetroCuadrado(getLado()));
     }
