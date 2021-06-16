@@ -4,12 +4,12 @@ public class Circulo {
     private float radio;
 
 //--- Constructor Círculo
-    public Circulo (String ejercicio){ //Constructor por defecto
-        System.out.println(ejercicio);
+    public Circulo (String nombre){ //Constructor por defecto
+        System.out.println(nombre);
     }
 
-    public Circulo (String ejercicio, float radio){
-        this(ejercicio);
+    public Circulo (String nombre, float radio){
+        this(nombre);
         this.radio = radio;
     }
 
