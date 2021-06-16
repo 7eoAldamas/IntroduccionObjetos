@@ -5,14 +5,14 @@ public class Libro {
     private boolean ocupado; //Disponibilidad del libro
 
 //--- Constructor Libro
-    public Libro (String nombre){ //Constructor por defecto
-        System.out.println(nombre+"\n");
+    public Libro (){ //Constructor por defecto
+
     }
 
     public Libro (String nombre, String libro){ //Constructor con parámetros
-        this(nombre);
+        System.out.println("\n"+nombre+"\n");
         this.libro = libro;
-        this.ocupado = false; //Inicia como disponible
+        this.ocupado = true; //Inicia como disponible
     }
 
     //--- Métodos de Acceso
@@ -34,7 +34,7 @@ public class Libro {
 
     //--- Método para realizar el préstamo
     public void prestarLibro(){
-        if (!ocupado) {
+        if (ocupado) {
             System.out.println("*-* El libro " + libro + " ha sido prestado correctamente");
             ocupado = false; //Cambio en disponibilidad
         } else {

@@ -5,12 +5,12 @@ public class Rectangulo {
     private int largo;
 
 //--- Constructor Rectángulo
-    public Rectangulo (String nombre){ //Constructor por defecto
-        System.out.println(nombre+"\n");
+    public Rectangulo (){ //Constructor por defecto
+
     }
 
     public Rectangulo (String nombre, int ancho, int largo){ //Constructor con parámetros
-        this(nombre);
+        System.out.println("\n"+nombre+"\n");
         this.ancho = ancho;
         this.largo = largo;
     }

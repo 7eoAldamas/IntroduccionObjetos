@@ -4,12 +4,12 @@ public class Cuadrado {
     private int lado;
 
     //--- Constructor Cuadrado
-    public Cuadrado(String nombre) { //Constructor por defecto
-        System.out.println(nombre+"\n");
+    public Cuadrado() { //Constructor por defecto
+
     }
 
     public Cuadrado(String nombre, int lado) { //Constructor con parámetro
-        this(nombre);
+        System.out.println("\n"+nombre+"\n");
         this.lado = lado;
     }
 

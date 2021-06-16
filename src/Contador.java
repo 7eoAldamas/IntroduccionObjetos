@@ -5,12 +5,11 @@ public class Contador {
     private int auxcontador;
 
 //--- Constructo de Contador
-    public Contador (String nombre){ //Constructor por defecto
-        System.out.println(nombre+"\n");
+    public Contador (){ //Constructor por defecto
     }
 
     public Contador (String nombre, int contador){ //Constructor con parámetros
-        this(nombre);
+        System.out.println("\n"+nombre+"\n");
         this.contador = contador;
         this.auxcontador = contador;
     }
@@ -22,6 +21,14 @@ public class Contador {
 
     public void setContador(int contador) {
         this.contador = contador;
+    }
+
+    public int getAuxcontador() {
+        return auxcontador;
+    }
+
+    public void setAuxcontador(int auxcontador) {
+        this.auxcontador = auxcontador;
     }
 
     //--- Método para incrementar un número -> num = num + 1
