@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Cuadrado {
 //---
 
@@ -36,5 +38,14 @@ public class Cuadrado {
     public void resultadoCuadrado(){
         System.out.println("*-*\tEl area del cuadrado es: "+areaCuadrado(getLado()));
         System.out.println("*-*\tEl perimetro del cuadrado es: "+perimetroCuadrado(getLado()));
+    }
+
+    public static void main(String[] args) {
+        //--- Código Ejecutable
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Ingrese el valor de uno de los lados del cuadrado: ");
+        Cuadrado cuadrado = new Cuadrado("Clase Cuadrado", sc.nextInt());
+        cuadrado.resultadoCuadrado();
     }
 }

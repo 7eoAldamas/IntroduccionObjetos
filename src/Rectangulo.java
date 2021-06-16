@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Rectangulo {
 //---
 
@@ -49,5 +51,19 @@ public class Rectangulo {
             System.out.println("*-*\tEl area del rectangulo es: "+areaRectangulo(getAncho(), getLargo()));
             System.out.println("*-*\tEl perimetro del rectangulo es: "+perimetroRectangulo(getAncho(), getLargo()));
         }
+    }
+
+    public static void main(String[] args) {
+        //--- Código Ejecutable
+        Scanner sc = new Scanner(System.in);
+        int ancho, largo;
+
+        System.out.print("Ingrese el ancho del rectangulo: ");
+        ancho = sc.nextInt();
+        System.out.print("Ingrese el largo del rectangulo: ");
+        largo = sc.nextInt();
+
+        Rectangulo rectangulo = new Rectangulo("Clase Rectangulo", ancho, largo);
+        rectangulo.resultadosRectangulo();
     }
 }

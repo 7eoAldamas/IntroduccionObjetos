@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Libro {
 //---
 
@@ -49,4 +51,26 @@ public class Libro {
         ocupado = true; //Cambio en disponibilidad
     }
 
+    public static void main(String[] args) {
+        //--- Código Ejecutable
+        Scanner sc = new Scanner(System.in);
+        int opcion;
+
+        System.out.print("Ingrese el nombre del libro: ");
+        Libro libro = new Libro("Clase Libro", sc.nextLine());
+
+        System.out.print("Desea prestar un libro Si (1) / No (2): ");
+        opcion = sc.nextInt();
+
+        if (opcion == 1){
+            libro.prestarLibro();
+        }
+
+        System.out.print("\nDesea devolver el libro "+libro.getLibro()+" Si (1) / No (2): ");
+        opcion = sc.nextInt();
+
+        if (opcion == 1){
+            libro.devolverLibro();
+        }
+    }
 }

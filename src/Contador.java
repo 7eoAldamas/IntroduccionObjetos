@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Contador {
 //---
 
@@ -45,5 +47,15 @@ public class Contador {
     public void resultadoInDe(){
         System.out.println("*-* El incremento del numero es: "+incrementarNumero());
         System.out.println("*-* El decremento del numero es: "+decrementarNumero());
+    }
+
+    public static void main(String[] args) {
+        //--- Código Ejecutable
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Ingrese el un numero: ");
+        Contador contador = new Contador("Clase Contador", sc.nextInt());
+        contador.resultadoInDe();
+
     }
 }

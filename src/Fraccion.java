@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Fraccion {
 //---
 
@@ -68,5 +70,31 @@ public class Fraccion {
         } else {
             System.out.println("*-* Error *-*");
         }
+    }
+
+    public static void main(String[] args) {
+        //--- Código Ejecutable
+        Scanner sc = new Scanner(System.in);
+        int num1, num2;
+
+        System.out.print("Ingrese el numerador de la 1ra expresion: ");
+        num1 = sc.nextInt();
+        System.out.print("Ingrese el denominador de la 1ra expresion: ");
+        num2 = sc.nextInt();
+        System.out.println("\n\n=========================================");
+        Fraccion expresion1 = new Fraccion(num1, num2);
+
+        System.out.print("Ingrese el numerador de la 2da expresion: ");
+        num1 = sc.nextInt();
+        System.out.print("Ingrese el denominador de la 2da expresion: ");
+        num2 = sc.nextInt();
+
+        Fraccion expresion2 = new Fraccion(num1, num2);
+        System.out.println("\n\n=========================================");
+        expresion1.sumaFraccion(expresion2);
+        expresion1.restaFraccion(expresion2);
+        expresion1.multiFraccion(expresion2);
+        expresion1.divFraccion(expresion2);
+
     }
 }

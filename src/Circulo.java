@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Circulo {
 //---
 
@@ -36,5 +38,14 @@ public class Circulo {
     public void resultadoCirculo(){
         System.out.println("*-*\tEl area del círculo es: "+areaCirculo(getRadio()));
         System.out.println("*-*\tEl perimetro del círculo es: "+perimetroCirculo(getRadio()));
+    }
+
+    public static void main(String[] args) {
+        //--- Código Ejecutable
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Ingrese el radio del circulo: ");
+        Circulo circulo = new Circulo("Clase Circulo", sc.nextInt());
+        circulo.resultadoCirculo();
     }
 }
